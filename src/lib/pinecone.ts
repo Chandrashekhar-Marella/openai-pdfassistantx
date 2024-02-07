@@ -9,8 +9,8 @@ export const getPineconeClient = async () => {
   } 
 
   const client = new Pinecone({
-    environment,
-    apiKey,
+    environment: environment!,
+    apiKey: apiKey!,
   });
 
   return client;
